@@ -1,22 +1,25 @@
-import React from 'react'
-import Link from 'next/link'
+import React, { Component } from 'react';
+import Nav from './Nav'
+import App from './App'
+// import Link from 'next/link'
 
-const Home = () => (
-  <div>
-    <div className="hero">
-      <h1 className="title">Welcome to SmartImg! BLAT PUTT ON THE NATIONAL GIM</h1>
-      <p className="description">
-        To get started, upload an image.
-      </p>
 
-      <div className="row">
+class Home extends Component{
+  constructor(props){
+    super(props);
+    this.state={
+
+    }
+  }
+
+  render(){
+    return (
+      <div>
+        <Nav/>
+        <App/>
       </div>
-    </div>
+    )
+  }
+}
 
-    <style jsx>{`
-
-    `}</style>
-  </div>
-)
-
-export default Home
+export default Home;
